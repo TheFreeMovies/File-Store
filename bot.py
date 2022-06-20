@@ -45,11 +45,11 @@ class Bot(Client):
         except Exception as e:
             self.LOGGER(__name__).warning(e)
             self.LOGGER(__name__).warning(f"Make Sure bot is Admin in DB Channel, and Double check the CHANNEL_ID Value, Current Value {CHANNEL_ID}")
-            self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/TFMServer for support")
+            self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/TFM_Storage_Server for support")
             sys.exit()
 
         self.set_parse_mode("html")
-        self.LOGGER(__name__).info(f"Bot Running..!\n\nCreated by TFM_Server \nhttps://t.me/tfmserver")
+        self.LOGGER(__name__).info(f"Bot Running..!\n\nCreated by TFM_Server \nhttps://t.me/TFM_Storage_Server")
         self.username = usr_bot_me.username
 
     async def stop(self, *args):
